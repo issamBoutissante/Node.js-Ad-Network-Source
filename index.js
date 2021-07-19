@@ -1,6 +1,6 @@
 const app=require('express')()
 //const PORT=3000
-const PORT=process.env.PORT || 3000
+app.port=process.env.PORT
 
 app.get("/data",(req, res)=>{
     res.status(200).send({
@@ -39,6 +39,6 @@ app.get("/data",(req, res)=>{
       })
 })
 
-app.listen(PORT,()=>{
+app.listen(app.get('port'),()=>{
     console.log(`The Server is listening on port ${PORT}`)
 })
