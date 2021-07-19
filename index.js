@@ -21,7 +21,7 @@ app.get("/data",(req, res)=>{
           }
         },
         "Fan": {
-          "enabled": true,
+          "enabled": false,
           "adUnits": {
             "NativeAd":"YOUR_PLACEMENT_ID",
             "Banner1":"IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID",
