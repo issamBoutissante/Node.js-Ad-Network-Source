@@ -1,16 +1,20 @@
 {
-  "name": "ad_network_source_api",
+  "name": "w2wise-calls-server",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "this server will be a temporary server for one to one video calling in well2wise application",
+  "main": "client.js",
   "scripts": {
-    "start":"node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx webpack-dev-server --entry ./client.js --output bundle.js --debug --devtool inline-source-map"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Boutissante Issam",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "@azure/communication-calling": "^1.4.4",
+    "@azure/communication-common": "^2.2.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   }
 }
